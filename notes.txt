@@ -1,0 +1,23 @@
+
+Target tag:
+$('span[id="cphMain_addr_Address"]').text()
+
+Site headers:
+headers: {
+    Accept: 
+    "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "max-age=0",
+    "Connection": "keep-alive",
+    "Cookie": "_ga=GA1.2.598222990.1633048002; _gid=GA1.2.601265016.1634671907",
+    "Host": "maps2.yorkcountygov.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38"
+    },
+    gzip: true
+});
+
+Security bypass:
+axios.defaults.httpsAgent = new https.Agent({
+            rejectUnauthorized: false,
+        });
