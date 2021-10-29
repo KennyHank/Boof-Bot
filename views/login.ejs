@@ -1,0 +1,18 @@
+<%- include('./partials/header.ejs')%>
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+        <div class="title pb-5">
+            <h2 class = "font-weight-bold">Login System</h2>
+            <span>Log in for the existing using</span>
+        </div>
+        <form action="/login" method="POST">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button>Login</button><br>
+        </form>
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs')%>

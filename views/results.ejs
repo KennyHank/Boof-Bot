@@ -1,0 +1,12 @@
+<%- include('./partials/header.ejs')%>
+        <main>
+            <h1>Search Results:</h1>
+            <div class ="intro-text">
+                <h2>Your search has been completed.</h2>
+                <p>Please click the button to download your complete .csv file</p>
+                <form name="getResults" method="POST" action="/search/download">   
+                    <input type="submit" value="Download">       
+                </form>
+            </div>
+        </main>
+<%- include('./partials/footer.ejs')%>

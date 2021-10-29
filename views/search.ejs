@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs')%>
+        <main>
+            <h1>Boof Bot Search</h1>
+            <div class ="intro-text">
+                <form name="searchForm" method="POST" action="/search/results">
+                    <table>
+                        <tr>
+                            <td>County:</td>
+                            <td><select name="county_name" id="county_name">
+                                <option value="york">York</option>
+                                <option value="gaston">Gaston</option>
+                            </select>
+                        </tr>
+                        <tr>
+                            <td>Tax Map ID list: </td>
+                            <td><input type="text" name="ids"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Search"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </main>
+<%- include('./partials/footer.ejs')%>
